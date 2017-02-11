@@ -2,9 +2,7 @@
 
 ## Exercício 1
 
-```
-source('cdc.R')
+```source('cdc.R')
 
 dim(cdc)
-
 ```
