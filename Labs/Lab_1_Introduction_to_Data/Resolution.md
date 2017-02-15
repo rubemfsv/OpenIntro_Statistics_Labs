@@ -110,4 +110,5 @@ Aproximadamente 71%
 
 Assuntos abordados: Desvio padrão, média, mediana, as informações do sumário, tipos de dados.
 Assuntos não abordados: Plotagem de gráficos.
+
 Já vi esses conceitos em um curso introdutório ao promovido no LCCV em 2015, pelo aluno Leonildo Melo. 
