@@ -50,9 +50,39 @@ boxplot(imc ~ cdc$exerany)
 Quando exerany é verdadeiro, nota-se que que o IMC  ligeiramente menor.
 
 ## Sua Vez
+### 1
+
+scatter.smooth(cdc$weight, cdc$wtdesire)
+
+A relação é positiva e linear entre weight e desired weight, quando weight aumenta, desired weight aumenta também.
 
 ### 2
 
-wdiff <- cdc$wtdesire - cdc$weight
+cdc$wdiff <- (cdc$wtdesire - cdc$weight)
+
+### 3
+
+O tipo de dado wdiff é uma variável numérica discreta. Se wdiff é positivo, a pessoa deseja pesar mais do que seu peso atual, e, se wdiff é negativo, a pessoa deseja pesar menos do que seu peso atual.
+
+### 4
+
+summary(wdiff)
+
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+-300.00  -21.00  -10.00  -14.59    0.00  500.00 
+
+O centro seria a mediana de -10, e a média seria -14.59.
+
+boxplot(wdiff)
+
+plot(table(wdiff[which(wdiff > quantile(wdiff, 0.01) & wdiff < quantile(wdiff, 0.99))]))  
+
+Já aqui, sua forma é unimodal e tem uma inclinação para a esquerda. A partir desses dados, podemos inferir que as pessoas, na maioria, deseja perder peso. 
+
+### 5
+
+### 6
+
+sum(abs(cdc$weight - mean(cdc$weight)) <= sd(cdc$weight)) / nrow(cdc)
 
 
