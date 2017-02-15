@@ -106,3 +106,8 @@ Desvio Padrão = 40.08097
 sum(abs(cdc$weight - mean(cdc$weight)) <= sd(cdc$weight)) / nrow(cdc) 
 Aproximadamente 71%
 
+### 7
+
+Assuntos abordados: Desvio padrão, média, mediana, as informações do sumário, tipos de dados.
+Assuntos não abordados: Plotagem de gráficos.
+Já vi esses conceitos em um curso introdutório ao promovido no LCCV em 2015, pelo aluno Leonildo Melo. 
