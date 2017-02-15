@@ -77,12 +77,32 @@ boxplot(wdiff)
 
 plot(table(wdiff[which(wdiff > quantile(wdiff, 0.01) & wdiff < quantile(wdiff, 0.99))]))  
 
-Já aqui, sua forma é unimodal e tem uma inclinação para a esquerda. A partir desses dados, podemos inferir que as pessoas, na maioria, deseja perder peso. 
+Já aqui, sua forma é unimodal e tem uma inclinação para a esquerda. A partir desses dados, podemos inferir que as pessoas, na maioria, desejam perder peso, enquanto uma parcela pequena deseja se manter no mesmo peso. 
 
 ### 5
 
+summary(wdiff[cdc$gender == 'f'])
+
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+-300.00  -27.00  -10.00  -18.15    0.00   83.00 
+
+summary(wdiff[cdc$gender == 'm'])
+
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+-300.00  -20.00   -5.00  -10.71    0.00  500.00 
+
+boxplot(wdiff ~ cdc$gender, outline=F)
+
+As mulheres normalmente querem que sua diferença entre peso desejado e peso seja mais negativa do que os homens - como também elas têm uma maior disseminação das diferenças desejadas do que os homens.
+
 ### 6
 
-sum(abs(cdc$weight - mean(cdc$weight)) <= sd(cdc$weight)) / nrow(cdc)
+mean(cdc$weight)
+Média = 169.683
 
+sd(cdc$weight)
+Desvio Padrão = 40.08097
+
+sum(abs(cdc$weight - mean(cdc$weight)) <= sd(cdc$weight)) / nrow(cdc) 
+Aproximadamente 71%
 
