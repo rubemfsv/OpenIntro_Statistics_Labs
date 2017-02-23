@@ -26,8 +26,7 @@ hist(females$kne.di)
 
 ### 4
 
-Abordados: Probabilidade, independência, distribuições contínuas.
+Abordados: Distribuição normal, distribuição geométrica, distribuição binomial.
 
-Não abordados: Nenhum, todos foram vistos em sala.
+Não abordados: Algumas distribuições discretas, porém, ficou como trabalho extra.
 
-Já vi sobre distribuições contínuas e probabilidade vagamente em algumas leituras na internet.
