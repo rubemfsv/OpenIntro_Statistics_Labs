@@ -1,4 +1,4 @@
-# Lab 3: Distributions
+# Lab 5: Inference for Numerical Data
 
 ## Sua Vez
 ### 1
