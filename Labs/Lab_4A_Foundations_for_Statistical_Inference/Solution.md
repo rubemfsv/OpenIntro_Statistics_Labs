@@ -4,6 +4,7 @@
 ### 1
 
 samp <- sample(price, 50)
+
 mean(samp)
 
 O resultado seria 190760.8.
@@ -11,8 +12,11 @@ O resultado seria 190760.8.
 ### 2
 
 sample_means_50 <- rep(NA, 5000)
+
 for (i in 1:5000) {
+
 sample_means_50[i] <- mean(sample(price, 50))
+
 }
 
 hist(sample_means_50)
@@ -28,8 +32,11 @@ Os outputs estão comentadas depois da cerquilha.
 ### 3
 
 sample_means_150 <- rep(NA, 5000)
+
 for (i in 1:5000) {
+
 sample_means_150[i] <- mean(sample(price, 150))
+
 }
 
 hist(sample_means_150, breaks=25)
