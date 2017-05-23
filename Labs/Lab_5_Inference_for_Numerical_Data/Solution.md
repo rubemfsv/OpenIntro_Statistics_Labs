@@ -31,12 +31,12 @@ by(nc$mage, nc$mature, summary)
 
 nc$mature: mature mom
 
-Min. 1st Qu. Median Mean 3rd Qu. Max.
+Min. 1st Qu. Median Mean 3rd Qu. Max. = 
 35.00 35.00 37.00 37.18 38.00 50.00
 
 nc$mature: younger mom
 
-Min. 1st Qu. Median Mean 3rd Qu. Max.
+Min. 1st Qu. Median Mean 3rd Qu. Max. = 
 13.00 21.00 25.00 25.44 30.00 34.00
 
 Aparentemente, temos que 35 é o limite de idade para as mães mais jovens e mais velhas, já que a mais velha e mais jovem possui 34 anos, e a mais velha mais jovem tem 35 anos.
@@ -52,6 +52,7 @@ qplot(data=d, sample=mofa_diff, color=whitemom)
 qplot(data=d, sample=mofa_diff, color=mature)
 
 H0: A diferença das condições é 0;
+
 HA: A diferença é diferente de 0.
 
 inference(y=d$mofa_diff, x=d$whitemom, est="mean", type="ht", null=0, alternative=“twosided", method="theoretical", conflevel=0.95, order=c("white", "not white"))
