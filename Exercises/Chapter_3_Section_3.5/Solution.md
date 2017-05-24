@@ -1,4 +1,4 @@
-# Exercise - Chapter 3, Section 3.5
+# Exercises - Chapter 3, Section 3.5
 
 ### 3.40
 
