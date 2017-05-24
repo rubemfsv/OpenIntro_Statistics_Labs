@@ -3,10 +3,21 @@
 ## Sua Vez
 ### 1
 
-a) Gráfico B.
-b) Gráfico C.
-c) Gráfico D.
-d) Gráfico A.
+#### A) 
+
+Gráfico B.
+
+#### B) 
+
+Gráfico C.
+
+#### C) 
+
+Gráfico D.
+
+#### D) 
+
+Gráfico A.
 
 ### 2
 
