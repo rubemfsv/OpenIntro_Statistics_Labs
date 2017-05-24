@@ -2,7 +2,7 @@
 
 ## Sua Vez
 ### 1
-#### a
+#### A)
 
 spain05 <- subset(atheism, nationality == "Spain" & year == "2005")
 
@@ -20,7 +20,7 @@ Os intervalos de confiança se sobrepõem, portanto não há evidência convince
 
 A proporção de ateus na Espanha não teve uma mudança significativa em seus índices no nível de confiança de 95% entre os anos de 2005 e 2012.
 
-#### b
+#### B)
 
 load("atheism.RData")
 
